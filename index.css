@@ -33,6 +33,7 @@ section .section-description {
 }
 
 .apply-now-button {
+  margin-top: 0.5rem;
   border: none;
   color: white;
   background-color: #276ef1;
