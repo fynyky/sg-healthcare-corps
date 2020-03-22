@@ -197,6 +197,7 @@ section.how-can-i-help .selections .selection:not(:last-child) {
 
 section.how-can-i-help .selections .selection .job-icon {
   max-width: 80%;
+  max-height: 15rem;
   margin-bottom: 10px;
 }
 section.how-can-i-help .selections .selection .job-title {
