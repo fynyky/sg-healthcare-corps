@@ -83,6 +83,11 @@ header nav {
   margin-right: 1em;
 }
 
+header nav a:hover{
+  color: #222;
+  cursor: pointer;
+}
+
 header nav a:not(:last-child)::after {
   content: "|";
   margin-left: 1em;
@@ -188,6 +193,11 @@ footer nav {
   margin-bottom: 3rem;
 }
 
+footer nav a:hover{
+  color: #222;
+  cursor: pointer;
+}
+
 footer nav a:not(:last-child)::after {
   content: "|";
   margin-left: 3em;
@@ -199,4 +209,6 @@ footer .copyright {
   border-top: 1px solid #AAA;
   margin-bottom: 32px;
 }
+
+
 
