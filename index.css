@@ -83,6 +83,12 @@ header nav {
   margin-right: 1em;
 }
 
+@media all and (max-width: 650px) { 
+  header nav {
+    display: none;
+  }
+}
+
 header nav a:hover{
   color: #222;
   cursor: pointer;
@@ -102,6 +108,7 @@ section.hero {
   font-size: 30px;
   padding-top: 4rem;
   padding-bottom: 5rem;
+  text-align: center;
 }
 
 section.hero .headline {
@@ -137,6 +144,13 @@ section.how-can-i-help .selections{
   justify-content: space-around;
 }
 
+
+@media all and (max-width: 650px) { 
+  section.how-can-i-help .selections {
+    flex-wrap: wrap;
+  }
+}
+
 section.how-can-i-help .selections .selection {
   width: 16rem;
   display: flex;
@@ -145,6 +159,15 @@ section.how-can-i-help .selections .selection {
   justify-content: center;
   color: #222;
   margin-bottom: 2rem;
+}
+
+
+@media all and (max-width: 650px) { 
+  section.how-can-i-help .selections .selection {
+    width: 40%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 section.how-can-i-help .selections .selection .job-icon {
@@ -191,6 +214,7 @@ footer nav {
   align-items: center;
   justify-content: space-around;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 footer nav a:hover{
@@ -204,11 +228,22 @@ footer nav a:not(:last-child)::after {
   margin-right: 3em;
 }
 
+
+@media all and (max-width: 650px) { 
+  footer nav a:not(:last-child)::after {
+    content: "";
+    margin-left: 0;
+    margin-right: 1em;
+  }
+}
+
 footer .copyright {
   padding-top: 16px;
   border-top: 1px solid #AAA;
   margin-bottom: 32px;
 }
+
+
 
 
 
