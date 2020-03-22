@@ -141,7 +141,7 @@ section.how-can-i-help .selections{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 
@@ -160,6 +160,10 @@ section.how-can-i-help .selections .selection {
   color: #222;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+section.how-can-i-help .selections .selection:not(:last-child) {
+  margin-right: 5rem;
 }
 
 
