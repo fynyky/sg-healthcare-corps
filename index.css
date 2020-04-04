@@ -130,6 +130,8 @@ section {
 }
 
 .hero .headline {
+  /* Display */
+  text-align: center;
   /* Appearance */
   font-size: 3rem;
 }
@@ -157,14 +159,25 @@ section {
   /* Position */
   position: relative;
   /* Size */
-  width: 100%;
+  width: 45%;
+  /* Display */
+  pointer-events: none;
 }
 
-.how-can-i-help .job.down .job-graphic {
-  z-index: 1;
-  margin-top: 180%;
+.how-can-i-help .job .job-description {
+  /* Position */
+  position: absolute;
+  top: 0;
+  left: 45%;
+  /* Size */
+  height: 100%;
+  padding-left: 2rem;
+  /* Display */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
-
 
 @media (min-width: 576px) { 
   .how-can-i-help .job .job-graphic {
@@ -175,21 +188,28 @@ section {
     z-index: 1;
     margin-top: 180%;
   }
-}
-
-.how-can-i-help .job .job-description {
-  /* Position */
-  position: absolute;
-  z-index: 2;
-  top: 0.5%;
-  left: 57%;
-  /* Appearance */
-  font-size: 0.7rem;
-  white-space: nowrap;
-}
-
-.how-can-i-help .job.down .job-description {
-  top: 82%;
+  .how-can-i-help .job .job-description {
+    /* Position */
+    z-index: -1;
+    left: 50%;
+    /* Size */
+    height: 50%;
+    padding-left: 1em;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: grey;
+    margin-left: -1px;
+    /* Display */
+    justify-content: flex-start;
+    /* Appearance */
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+  .how-can-i-help .job.down .job-description {
+    top: 80%;
+    height: auto;
+    padding-top: 1rem;
+  }
 }
 
 .how-can-i-help .job .job-description .job-title {
@@ -215,7 +235,9 @@ section {
   /* Size */
   padding-top: 2rem;
   padding-bottom: 2rem;
-  /* display */
+}
+
+.site-footer .contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,8 +245,20 @@ section {
   text-align: center;
 }
 
-.site-footer .ogp-logo {
-  max-height: 3rem;
-  margin-top: 1rem;
+.site-footer .acknowledgements {
+  /* Display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Appearance */
+  font-size: 0.8rem;
 }
 
+.site-footer .ogp-logo {
+  max-height: 3rem;
+  max-width: 15rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
