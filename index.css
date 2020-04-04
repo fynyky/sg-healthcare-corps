@@ -157,13 +157,24 @@ section {
   /* Position */
   position: relative;
   /* Size */
-  width: 180%;
-  margin-left: -40%;
+  width: 100%;
 }
 
 .how-can-i-help .job.down .job-graphic {
   z-index: 1;
   margin-top: 180%;
+}
+
+
+@media (min-width: 576px) { 
+  .how-can-i-help .job .job-graphic {
+    width: 180%;
+    margin-left: -40%;
+  }
+  .how-can-i-help .job.down .job-graphic {
+    z-index: 1;
+    margin-top: 180%;
+  }
 }
 
 .how-can-i-help .job .job-description {
@@ -201,8 +212,19 @@ section {
 }
 
 .site-footer {
+  /* Size */
   padding-top: 2rem;
   padding-bottom: 2rem;
+  /* display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+}
+
+.site-footer .ogp-logo {
+  max-height: 3rem;
+  margin-top: 1rem;
 }
 
