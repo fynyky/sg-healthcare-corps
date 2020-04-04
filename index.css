@@ -27,6 +27,7 @@ section {
 }
 
 .section-title {
+  margin-bottom: 1rem;
   /* Display */
   text-align: center;
   /* Appearance */
@@ -52,6 +53,12 @@ section {
 .button:hover {
  color: white;
  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .container.narrow {
+      max-width: 720px;
+  }  
 }
 
 /*----------------------------------------------------------------------------*/
@@ -155,6 +162,10 @@ section {
   font-size: 1.2rem;
 }
 
+.how-can-i-help .jobs-list {
+  margin-top: 4rem;
+}
+
 .how-can-i-help .job .job-graphic {
   /* Position */
   position: relative;
@@ -224,7 +235,6 @@ section {
   /* Size */
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
   /* Appearance */
   background-color: #7a7a7a;
   color: #FFF;
