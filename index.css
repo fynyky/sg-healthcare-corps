@@ -190,14 +190,14 @@ section {
   }
   .how-can-i-help .job .job-description {
     /* Position */
-    z-index: -1;
+    z-index: 1;
     left: 50%;
     /* Size */
-    height: 50%;
+    height: auto;
     padding-left: 1em;
     border-left-width: 2px;
     border-left-style: solid;
-    border-left-color: grey;
+    border-left-color: #444;
     margin-left: -1px;
     /* Display */
     justify-content: flex-start;
@@ -206,9 +206,11 @@ section {
     white-space: nowrap;
   }
   .how-can-i-help .job.down .job-description {
+    /* Position */
     top: 80%;
+    /* Size */
     height: auto;
-    padding-top: 1rem;
+    margin-top: 1rem;
   }
 }
 
