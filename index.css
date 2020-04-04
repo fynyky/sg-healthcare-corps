@@ -31,7 +31,7 @@ section {
   text-align: center;
   /* Appearance */
   color: #7a7a7a;
-  font-size: x-large;
+  font-size: 1.5rem;
 }
 
 .button {
@@ -131,7 +131,7 @@ section {
 
 .hero .headline {
   /* Appearance */
-  font-size: xxx-large;
+  font-size: 3rem;
 }
 
 .hero .headline .headline-highlight {
@@ -142,7 +142,7 @@ section {
 .hero .tagline {
   /* Appearance */
   color: #7a7a7a;
-  font-size: x-large;
+  font-size: 2rem;
   font-weight: 900;
 }
 
@@ -150,7 +150,7 @@ section {
   /* Appearance */
   background-color: #a72a17;
   color: #FFF;
-  font-size: large;
+  font-size: 1.2rem;
 }
 
 .how-can-i-help .job .job-graphic {
@@ -184,7 +184,7 @@ section {
   top: 0.5%;
   left: 57%;
   /* Appearance */
-  font-size: small;
+  font-size: 0.7rem;
   white-space: nowrap;
 }
 
@@ -196,7 +196,7 @@ section {
   /* Size */
   margin-bottom: 0;
   /* Appearance */
-  font-size: medium;
+  font-size: 1rem;
 }
 
 
