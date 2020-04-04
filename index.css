@@ -1,281 +1,208 @@
-/* Global Styles */
-body {
-  font-size: 16px;
-  font-family: Lato, sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.05em;
-  color: #666;
+
+/* Reference Values
+Healthcare Red: #a72a17;
+Secondary Text: #7a7a7a
+*/
+{
+  /* Postition */
+  /* Size */
+  /* Display */
+  /* Appearance */
 }
 
-.highlight-text {
-  color: #a72a17;
+/*----------------------------------------------------------------------------*/
+/* Global Styles */
+/*----------------------------------------------------------------------------*/
+
+body {
+  color: #444;
+  font-size: medium;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
 }
 
 section {
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-@media all and (max-width: 650px) { 
-  section {
-    padding: 1rem;
-  }
+.section-title {
+  /* Display */
+  text-align: center;
+  /* Appearance */
+  color: #7a7a7a;
+  font-size: x-large;
 }
 
-section .section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-section .section-description {
-  max-width: 50em;
-  color: #222;
-}
-
-.apply-now-button {
-  margin-top: 0.5rem;
+.button {
+  /* Size */
+  padding: 0.5em 1.5em;
   border: none;
+  margin-top: 0.5em;
+  /* Display */
+  display: inline-block;
+  cursor: pointer;
+  /* Appearance */
   color: white;
   background-color: #276ef1;
   border-radius: 4px;
-  padding: 10px 20px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
+.button:hover {
+ color: white;
+ text-decoration: none;
+}
 
+/*----------------------------------------------------------------------------*/
 /* Specific Styles */
-.masthead a {
+/*----------------------------------------------------------------------------*/
+.masthead {
+  /* Size */
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  /* Appearance */
+  background-color: #f0f0f0;
+}
+
+.masthead .gov-brand {
+  /* Display */
   display: flex;
   align-items: center;
   justify-content: start;
-  background-color: #EEE;
-  font-size: 12px;
-  font-weight: 400;
-  padding: 10px 16px;
+  /* Appearance */
+  color: #333;
   text-decoration: none;
-  color: inherit;
 }
 
-
-.masthead .gov-logo {
-  height: 1.4em;
+.masthead .gov-brand img {
+  /* Size */
+  height: 1rem;
   margin-right: 0.5rem;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem;
+.site-header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-header .site-title a {
+.site-header .container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  text-transform: uppercase;
+  justify-content: space-between;  
+}
+
+.site-header .site-brand {
+  /* Display */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* Appearance */
+  color: #444;
   font-weight: 700;
   text-decoration: none;
-  color: inherit;
+  text-transform: uppercase;
 }
 
-header .site-title .site-logo {
-  max-height: 2em;
-  margin-right: 4px;
+.site-header .site-brand img {
+  /* Size */
+  height: 38px;
+  margin-right: 6px;
 }
 
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-right: 1em;
+.site-header .agency-brand {
 }
 
-@media all and (max-width: 650px) { 
-  header nav {
-    display: none;
-  }
+.site-header .agency-brand img {
+  /* Size */
+  height: 71px;
 }
 
-header nav a:hover{
-  color: #222;
-  cursor: pointer;
+.hero {
 }
 
-header nav a:not(:last-child)::after {
-  content: "|";
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-section.hero {
+.hero .container {
+  /* Display */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-  padding-top: 4rem;
-  padding-bottom: 5rem;
-  text-align: center;
 }
 
-
-@media all and (max-width: 650px) { 
-  section.hero {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
+.hero .headline {
+  /* Appearance */
+  font-size: xxx-large;
 }
 
-section.hero .headline {
-  margin: 16px 0;
-  font-size: 40px;
-  font-weight: 700;
+.hero .headline .headline-highlight {
+  /* Appearance */
+  color: #a72a17;
 }
 
-section.hero .tagline {
+.hero .tagline {
+  /* Appearance */
+  color: #7a7a7a;
+  font-size: x-large;
   font-weight: 900;
 }
 
-section.what-is-this {
-  background-color: #EEE;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.what-is-this {
+  /* Appearance */
+  background-color: #a72a17;
+  color: #FFF;
+  font-size: large;
+}
+
+.how-can-i-help .job .job-graphic {
+  /* Position */
+  position: relative;
+  /* Size */
+  width: 180%;
+  margin-left: -40%;
+}
+
+.how-can-i-help .job.down .job-graphic {
+  z-index: 1;
+  margin-top: 180%;
+}
+
+.how-can-i-help .job .job-description {
+  /* Position */
+  position: absolute;
+  z-index: 2;
+  top: 0.5%;
+  left: 57%;
+  /* Appearance */
+  font-size: small;
+  white-space: nowrap;
+}
+
+.how-can-i-help .job.down .job-description {
+  top: 82%;
+}
+
+.how-can-i-help .job .job-description .job-title {
+  /* Size */
+  margin-bottom: 0;
+  /* Appearance */
+  font-size: medium;
+}
+
+
+.faq .section-title {
+  /* Size */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  /* Appearance */
+  background-color: #7a7a7a;
+  color: #FFF;
+  text-align: start;
+}
+
+.site-footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-section.how-can-i-help {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-section.how-can-i-help .selections{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-
-@media all and (max-width: 650px) { 
-  section.how-can-i-help .selections {
-    flex-wrap: wrap;
-  }
-}
-
-section.how-can-i-help .selections .selection {
-  width: 18rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  color: #222;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-section.how-can-i-help .selections .selection:not(:last-child) {
-  margin-right: 3rem;
-}
-
-
-@media all and (max-width: 650px) { 
-  section.how-can-i-help .selections .selection {
-    width: 40%;
-  }
-  section.how-can-i-help .selections .selection:not(:last-child) {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
-section.how-can-i-help .selections .selection .job-icon {
-  max-width: 80%;
-  max-height: 15rem;
-  margin-bottom: 10px;
-}
-section.how-can-i-help .selections .selection .job-title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-section.how-can-i-help .selections .selection .job-description {
-  margin-bottom: 10px;
-}
-
-section.how-can-i-help .selections .selection .learn-more {
-  font-weight: 700;
-  color: #276ef1;
-}
-
-section.how-can-i-help .selections .selection .learn-more a {
-  font-weight: 700;
-  color: #276ef1;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
-
-section.role-description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 5rem;
-}
-
-
-@media all and (max-width: 650px) { 
-  section.role-description {
-    padding-bottom: 2rem;
-  }
-}
-footer nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
-}
-
-footer nav a:hover{
-  color: #222;
-  cursor: pointer;
-}
-
-footer nav a:not(:last-child)::after {
-  content: "|";
-  margin-left: 3em;
-  margin-right: 3em;
-}
-
-
-@media all and (max-width: 650px) { 
-  footer nav a:not(:last-child)::after {
-    content: "";
-    margin-left: 0;
-    margin-right: 1em;
-  }
-}
-
-footer .copyright {
-  padding-top: 16px;
-  border-top: 1px solid #AAA;
-  margin-bottom: 32px;
-}
-
-
-
-
 
