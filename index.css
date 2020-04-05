@@ -1,10 +1,18 @@
 /*----------------------------------------------------------------------------*/
 /* Global Styles */
 /*----------------------------------------------------------------------------*/
+html {
+  font-size: medium;
+}
+
+@media (min-width: 768px) { 
+  html {
+    font-size: large;
+  }
+}
 
 body {
   color: #444;
-  font-size: medium;
   font-family: Lato, sans-serif;
   font-weight: 300;
 }
@@ -205,7 +213,7 @@ section {
     /* Position */
     position: absolute;
     z-index: 1;
-    bottom: 28rem;
+    bottom: 26.5rem;
     left: 50%;
     /* Size */
     height: auto;
@@ -222,7 +230,7 @@ section {
   }
   .how-can-i-help .job.down .job-description {
     /* Position */
-    top: 29rem;
+    top: 28rem;
     bottom: auto;
     /* Size */
     height: auto;
@@ -234,10 +242,10 @@ section {
     margin-bottom: 10rem;
   }
   .how-can-i-help .job .job-description {
-    bottom: 35rem;
+    bottom: 33rem;
   }
   .how-can-i-help .job.down .job-description {
-    top: 37rem;
+    top: 34.5rem;
   }
 }
 @media (min-width: 1200px) { 
@@ -245,10 +253,10 @@ section {
     margin-bottom: 12rem;
   }
   .how-can-i-help .job .job-description {
-    bottom: 41rem;
+    bottom: 38rem;
   }
   .how-can-i-help .job.down .job-description {
-    top: 43rem;
+    top: 40.5rem;
   }
 }
 
