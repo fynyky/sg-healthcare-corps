@@ -159,6 +159,10 @@ section {
   font-size: 1.2rem;
 }
 
+.how-can-i-help {
+  font-size: 1.2rem;
+}
+
 .how-can-i-help .jobs-list {
   margin-top: 4rem;
 }
@@ -194,8 +198,8 @@ section {
   .how-can-i-help .job {
     margin-bottom: 0;
     align-items: flex-end;
-    padding-top: 8em;
-    padding-bottom: 8em;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
   .how-can-i-help .job.down {
   }
@@ -217,7 +221,7 @@ section {
     left: 50%;
     /* Size */
     height: auto;
-    padding-left: 1em;
+    padding-left: 1rem;
     border-left-width: 2px;
     border-left-style: solid;
     border-left-color: #444;
