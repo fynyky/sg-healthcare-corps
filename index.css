@@ -155,23 +155,26 @@ section {
   margin-top: 4rem;
 }
 
+
+.how-can-i-help .job {
+  /* Size */
+  margin-bottom: 3rem;
+  /* Display */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .how-can-i-help .job .job-graphic {
   /* Position */
   position: relative;
   /* Size */
-  width: 45%;
-  /* Display */
-  pointer-events: none;
+  max-width: 50%;
 }
 
 .how-can-i-help .job .job-description {
-  /* Position */
-  position: absolute;
-  top: 0;
-  left: 45%;
   /* Size */
-  height: 100%;
-  padding-left: 2rem;
+  margin-left: 1.5rem;
   /* Display */
   display: flex;
   flex-direction: column;
@@ -179,18 +182,30 @@ section {
   justify-content: center;
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 768px) { 
+  .how-can-i-help .job {
+    margin-bottom: 0;
+    align-items: flex-end;
+    padding-top: 8em;
+    padding-bottom: 8em;
+  }
+  .how-can-i-help .job.down {
+  }
   .how-can-i-help .job .job-graphic {
+    max-width: initial;
     width: 180%;
     margin-left: -40%;
+    margin-bottom: 8rem;
   }
   .how-can-i-help .job.down .job-graphic {
     z-index: 1;
-    margin-top: 180%;
+    margin-bottom: 0;
   }
   .how-can-i-help .job .job-description {
     /* Position */
+    position: absolute;
     z-index: 1;
+    bottom: 28rem;
     left: 50%;
     /* Size */
     height: auto;
@@ -207,10 +222,33 @@ section {
   }
   .how-can-i-help .job.down .job-description {
     /* Position */
-    top: 80%;
+    top: 29rem;
+    bottom: auto;
     /* Size */
     height: auto;
-    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 992px) { 
+  .how-can-i-help .job .job-graphic {
+    margin-bottom: 10rem;
+  }
+  .how-can-i-help .job .job-description {
+    bottom: 35rem;
+  }
+  .how-can-i-help .job.down .job-description {
+    top: 37rem;
+  }
+}
+@media (min-width: 1200px) { 
+  .how-can-i-help .job .job-graphic {
+    margin-bottom: 12rem;
+  }
+  .how-can-i-help .job .job-description {
+    bottom: 41rem;
+  }
+  .how-can-i-help .job.down .job-description {
+    top: 43rem;
   }
 }
 
