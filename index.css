@@ -102,15 +102,20 @@ section {
   justify-content: start;
   /* Appearance */
   color: #444;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
 }
+@media (min-width: 576px) { 
+  .site-header .site-brand {
+    font-size: 1.2rem;
+  }
+}
 
 .site-header .site-brand img {
   /* Size */
-  height: 2.2em;
+  height: 1.8em;
   margin-right: 0.4em;
 }
 
@@ -118,8 +123,12 @@ section {
 }
 
 .site-header .agency-brand img {
-  /* Size */
-  height: 5rem;
+  height: 3rem;
+}
+@media (min-width: 576px) { 
+  .site-header .agency-brand img {
+    height: 5rem;
+  }
 }
 
 .hero {
