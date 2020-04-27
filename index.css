@@ -18,8 +18,8 @@ body {
 }
 
 section {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .section-title {
@@ -30,6 +30,25 @@ section {
   color: #7a7a7a;
   font-size: 1.5rem;
 }
+
+.subsection-title {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  /* Display */
+  text-align: center;
+  /* Appearance */
+  color: #a72a17;
+  font-size: 1.5rem;
+}
+
+.subsection-subtitle {
+  /* Display */
+  text-align: center;
+  /* Appearance */
+  color: #7a7a7a;
+  font-size: 1rem;
+}
+
 
 .button {
   /* Size */
@@ -44,6 +63,10 @@ section {
   background-color: #276ef1;
   border-radius: 4px;
   text-decoration: none;
+}
+
+.button.secondary {
+  background-color: #cd867c;
 }
 
 .button:hover {
@@ -176,7 +199,6 @@ section {
   margin-top: 4rem;
 }
 
-
 .how-can-i-help .job {
   /* Size */
   margin-bottom: 3rem;
@@ -205,18 +227,12 @@ section {
 
 @media (min-width: 768px) { 
   .how-can-i-help .job {
+    flex-direction: column;
     margin-bottom: 0;
-    align-items: flex-end;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-  .how-can-i-help .job.down {
   }
   .how-can-i-help .job .job-graphic {
     max-width: initial;
-    width: 180%;
-    margin-left: -40%;
-    margin-bottom: 8rem;
+    width: 100%;
   }
   .how-can-i-help .job.down .job-graphic {
     z-index: 1;
@@ -224,17 +240,14 @@ section {
   }
   .how-can-i-help .job .job-description {
     /* Position */
-    position: absolute;
-    z-index: 1;
-    bottom: 26.5rem;
-    left: 50%;
+    align-self: flex-start;
+    margin-left: 50%;
     /* Size */
     height: auto;
     padding-left: 1rem;
     border-left-width: 2px;
     border-left-style: solid;
     border-left-color: #444;
-    margin-left: -1px;
     /* Display */
     justify-content: flex-start;
     /* Appearance */
@@ -251,26 +264,8 @@ section {
 }
 
 @media (min-width: 992px) { 
-  .how-can-i-help .job .job-graphic {
-    margin-bottom: 10rem;
-  }
-  .how-can-i-help .job .job-description {
-    bottom: 33rem;
-  }
-  .how-can-i-help .job.down .job-description {
-    top: 34.5rem;
-  }
 }
 @media (min-width: 1200px) { 
-  .how-can-i-help .job .job-graphic {
-    margin-bottom: 12rem;
-  }
-  .how-can-i-help .job .job-description {
-    bottom: 38rem;
-  }
-  .how-can-i-help .job.down .job-description {
-    top: 40.5rem;
-  }
 }
 
 .how-can-i-help .job .job-description .job-title {
@@ -298,6 +293,9 @@ section {
 }
 
 .site-footer .contact-info {
+  /* Size */
+  margin-bottom: 4rem;
+  /* Display */
   display: flex;
   flex-direction: column;
   align-items: center;
