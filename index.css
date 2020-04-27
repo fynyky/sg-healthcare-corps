@@ -232,7 +232,7 @@ section {
   }
   .how-can-i-help .job .job-graphic {
     max-width: initial;
-    width: 100%;
+    width: 90%;
   }
   .how-can-i-help .job.down .job-graphic {
     z-index: 1;
