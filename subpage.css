@@ -1,0 +1,30 @@
+.subpage {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.subpage .section-title {
+  /* Size */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* Appearance */
+  background-color: #a72a17;
+  color: #FFF;
+  text-align: start;
+}
+
+.subpage h3 {
+  color: #a72a17;
+}
+
+.subpage .job-float {
+  width: 40%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subpage .job-float .job-graphic {
+  max-width: 100%;
+}
