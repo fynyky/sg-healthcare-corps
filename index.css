@@ -32,7 +32,7 @@ section {
 }
 
 .subsection-title {
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-bottom: 2rem;
   /* Display */
   text-align: center;
@@ -196,7 +196,8 @@ section {
 }
 
 .how-can-i-help .jobs-list {
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .how-can-i-help .job {
@@ -275,6 +276,10 @@ section {
   font-size: 1rem;
 }
 
+
+.faq {
+  padding-top: 0;
+}
 
 .faq .section-title {
   /* Size */
